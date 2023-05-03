@@ -25,14 +25,14 @@ public class SwaggerConfig {
                 .version("v0.0.1")
                 .license(new License()
                     .name("Marcelo Alexandre")
-                    .url("https://brazil.generation.org/"))
+                    .url("https://www.linkedin.com/in/celoselado/"))
                 .contact(new Contact()
                     .name("Marcelo Alexandre")
                     .url("https://github.com/celoselado")
                     .email("malexandresantos@hotmail.com")))
             .externalDocs(new ExternalDocumentation()
                 .description("Upload do Blog Pessoal desenvolvido no bootcamp da Generation Brasil")
-                .url("https://github.com/celoselado"));
+                .url("https://github.com/celoselado/Blog-Pessoal"));
     }
 
 
