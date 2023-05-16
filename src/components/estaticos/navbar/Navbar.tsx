@@ -1,13 +1,15 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Box, Grid} from '@material-ui/core';
+import './Navbar.css'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return(
         <>
-        <AppBar position="static" >
-                <Toolbar variant="dense" >
-                <Grid container justifyContent={'space-between'}>
-                    <Box style={{ cursor: "pointer" }} >
+        <AppBar position="static" className='corNavBar' >
+                <Toolbar variant="dense"  >
+                <Grid container justifyContent={'space-between'} >
+                    <Box style={{ cursor: "pointer" }}  >
                         <Typography variant="h5" color="inherit">
                             BlogPessoal
                         </Typography>
@@ -15,29 +17,31 @@ function Navbar() {
                     <Box display="flex" justifyContent="start">
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
-                                home
+                                Home
                             </Typography>
                         </Box>
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
-                                postagens
+                                | Postagens
                             </Typography>
                         </Box>
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
-                                temas
+                                | Temas
                             </Typography>
                         </Box>
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
-                                cadastrar tema
+                                | Cadastrar Tema
                             </Typography>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="inherit">
-                                logout
-                            </Typography>
-                        </Box>
+                        <Link to='/login' className=' text-decoration-none' >
+                            <Box mx={1} style={{ cursor: "pointer" }} color='white'>
+                                <Typography variant="h6" color="inherit">
+                                    | LogOut
+                                </Typography>
+                            </Box>
+                        </Link>
                     </Box>
                     </Grid>
                 </Toolbar>

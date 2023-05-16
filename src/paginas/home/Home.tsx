@@ -15,7 +15,7 @@ function Home() {
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         </Box>
-                        <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#57C5B6", color: "white" }}>Ver Postagens</Button>
+                        <Button variant="contained"  style={{ borderColor: "white", backgroundColor: "white", color: "black" }} className="botaoMouse">Ver Postagens</Button>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
